@@ -62,7 +62,7 @@ Git is a version control system
    1. _Commit at least 3 times in an hour_
    2. _Logical commit - Complete commit (No bugs)_
    3. _Small Commit_
-5. Commit (Save Point)
+5. Commit (Save Point -> creates a version)
 6. Sync to Github (online)
 
 - _`Blue(master)`_ offline
