@@ -45,5 +45,21 @@ for j in range(3):
 
 ## GIT
 
+### What letters mean
+
 - `U` means untracked file
 - `A` means files added
+
+### Steps to Push to Git
+
+1. `git init`
+2. Stage All
+3. Provide Message - Why? > What?
+4. When to Commit?
+   1. _Commit at least 3 times in an hour_
+   2. _Logical commit - Complete commit (No bugs)_
+   3. _Small Commit_
+5. Sync to Github (online)
+
+- _`Blue(master)`_ offline
+- _`Purple(origin/master)`_ online
