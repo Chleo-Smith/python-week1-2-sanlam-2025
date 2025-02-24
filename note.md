@@ -45,6 +45,8 @@ for j in range(3):
 
 ## GIT
 
+Git is a version control system
+
 ### What letters mean
 
 - `U` means untracked file
@@ -59,7 +61,8 @@ for j in range(3):
    1. _Commit at least 3 times in an hour_
    2. _Logical commit - Complete commit (No bugs)_
    3. _Small Commit_
-5. Sync to Github (online)
+5. Commit (Save Point)
+6. Sync to Github (online)
 
 - _`Blue(master)`_ offline
 - _`Purple(origin/master)`_ online
