@@ -45,5 +45,5 @@ for j in range(3):
 
 ## GIT
 
-- `U` means untracked
-- `A` means added
+- `U` means untracked file
+- `A` means files added

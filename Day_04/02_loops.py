@@ -45,5 +45,6 @@ while n < rows + 1:
 rows = int(input("Please tell the no of rows? "))
 symbol = input("Please tell the pattern?")
 
+# loop stuff
 for m in range(1, rows + 1):
     print(symbol * m)
