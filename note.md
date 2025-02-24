@@ -51,6 +51,7 @@ Git is a version control system
 
 - `U` means untracked file
 - `A` means files added
+- `M` opens working tree where you compared things you changed
 
 ### Steps to Push to Git
 
