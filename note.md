@@ -67,3 +67,32 @@ Git is a version control system
 
 - _`Blue(master)`_ offline
 - _`Purple(origin/master)`_ online
+
+# .ipynb
+
+Interactive python notebook
+
+# venv
+
+protects against bad updates. a shield against bad global python updates.
+
+# common methods
+
+list and string
+
+1. Slice
+2. index: +ve and -ve
+3. len
+4. count
+5. concatenate (+)
+6. repetition (\*)
+
+# DX
+
+- developer experience
+- numeric seperators `10_000_000` pyhton doesnt recognize it
+- dont use `,` it creates a tuple
+
+# simple for loop
+
+-
