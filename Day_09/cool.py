@@ -1,4 +1,7 @@
 def to_upper_case(text):
+    """
+    This is beautiful function that returns uppercase value with wave emoji
+    """
     return text.upper() + " 👋"
 
 
