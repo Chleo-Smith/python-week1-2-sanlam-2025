@@ -12,7 +12,7 @@ def get_price_2():
     print("The price of the book is: ", price)
 
 
-get_price_2()
+# get_price_2()
 
 # -------------------------------------------------------------------------------
 # Case 3: Both same variable name(Inside and outside)
@@ -26,7 +26,7 @@ def get_price_3():
     print("The price of the book is: ", price)
 
 
-get_price_3()
+# get_price_3()
 
 # -------------------------------------------------------------------------------
 # Case 4: Pythin knows locally the variable is present
@@ -39,7 +39,7 @@ def get_price_4():
     print("The price of the book is: ", price)
 
 
-get_price_4()
+# get_price_4()
 
 # -------------------------------------------------------------------------------
 
@@ -50,3 +50,30 @@ get_price_4()
 # SUMMARY
 # 1. local var preferrence
 # 2. UnboundLocalError --> if you try to access before declaration
+# 3. only functions create new scope.
+
+
+# t1 = True
+
+# if t1:
+#    x = "abc"
+
+# okay
+# print(x)
+
+
+def cool():
+    t1 = True
+    if t1:
+        x = "abc"
+
+
+# error
+cool()
+# print(x)
+
+
+# assignment:
+# write comparisson in terms of scope on keywords
+# global and non-local
+# with examples
