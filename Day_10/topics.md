@@ -2,7 +2,7 @@
 
 - scope ✅
 - lambda functions ✅
-- inbuilt functions ❌
+- inbuilt functions ✅
 - first class citizen functions ✅
 - class ❌
   - polymorphism ❌
