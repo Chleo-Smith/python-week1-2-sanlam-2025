@@ -1,3 +1,5 @@
+# can import entire file
+# or import required functions or values
 import f1
 
 
