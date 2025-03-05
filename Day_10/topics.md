@@ -5,8 +5,8 @@
 - inbuilt functions ✅
 - first class citizen functions ✅
 - class ✅
-  - polymorphism ❌
+  - polymorphism ✅
   - abstraction ✅
   - encapsulation ✅
-  - inheritance ❌
+  - inheritance ✅
   - error ❌
