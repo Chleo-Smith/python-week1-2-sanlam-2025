@@ -4,7 +4,9 @@
 - lambda functions ✅
 - inbuilt functions ✅
 - first class citizen functions ✅
-- class ❌
+- class ✅
   - polymorphism ❌
+  - abstraction ✅
+  - encapsulation ✅
   - inheritance ❌
   - error ❌
