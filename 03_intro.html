@@ -1,0 +1,98 @@
+<!--- why repeat html here: cause before we could write non-html in html file-->
+<!DOCTYPE html>
+<!-- attributes: lang, charset, name. kw arguments-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanlam</title>
+    <!---internal CSS-->
+    <!---all h3 affected by this-->
+    <style>
+      ul {
+        color: orange;
+      }
+      p {
+      }
+      .hobby-heading {
+        font-size: 32px;
+        font-weight: normal;
+        font-style: italic;
+        color: tomato;
+      }
+      /*what is it for ? when naming class*/
+      .list {
+        color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <!--- Heading
+    from h1 to h6 decrease oin side
+    if h7: no error, very forgiving
+    still print if you forgt tags and even closing tag
+    even if you write outside of body it'll print on screen
+    heading default bold but normal line wont be bold
+    -->
+    <h1>Hello, Sanlam</h1>
+    <h2>Hello, Sanlam</h2>
+    <h5>Hello, Sanlam</h5>
+    <h6>Hello, Sanlam</h6>
+    <h7>Hello, Sanlam</h7>
+
+    <!--paragraph tag seperates into paragraphs
+    if not in p tag itll follow after one another with a space
+    --->
+    <p>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum
+    </p>
+    <p>"hello"</p>
+
+    <!--unordered list UL
+    ordered list OL
+    if not in p tag itll follow after one another with a space
+    --->
+    <h3 class="hobby-heading">Hello, Sanlam</h3>
+    <ul>
+      <li>Music</li>
+      <li>3D printing</li>
+      <li>Soccer</li>
+      <li>Chess</li>
+      <li>Sudoku</li>
+      <li>Cosplaying</li>
+    </ul>
+
+    <ol class="list">
+      <li>Music</li>
+      <li>3D printing</li>
+      <li>Soccer</li>
+      <li>Chess</li>
+      <li>Sudoku</li>
+      <li>Cosplaying</li>
+    </ol>
+
+    <!--div: container--->
+    <div>
+      <h4>reviews</h4>
+      <p>Good! It was amazing ⭐⭐⭐⭐⭐</p>
+      <p>amazing I love RDJ ⭐⭐⭐⭐</p>
+      <p>Avengers assemble ⭐⭐⭐⭐⭐</p>
+    </div>
+  </body>
+</html>
+
+<!---
+1. element/ tag: html, head, meta, title
+2. Attributes: lang, charset, name, ke arguments
+3. UTF-8: emoji, chines, tamil, jaoanese. other language characters inside it
+4. content: landscape to portrait rotations
+5. title: responsible for chrome tab name
+6. meta: tab handles thumbnail
+7. body tab:
+-->
