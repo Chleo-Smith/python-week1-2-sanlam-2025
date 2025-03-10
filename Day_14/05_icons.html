@@ -19,26 +19,62 @@
         place-content: center;
         min-height: 100vh;
         margin: 0px;
+
+        font-family: Roboto, sans-serif;
+
+        /* Css Variables */
+        --light-red: hsla(359, 100%, 73%, 1);
+        --light-coral: hsla(359, 62%, 74%, 1);
+        --honeydew: hsla(95, 100%, 95%, 1);
+        --viridian: hsla(158, 31%, 44%, 1);
+        --space-cadet: hsla(238, 43%, 18%, 1);
       }
 
       .hobby-container {
         font-size: 32px;
       }
-      li {
-        list-style-type: 🎵;
+
+      /* Task - Each icon in different color, text in black */
+      .hobby-list {
+        list-style: none;
+        padding: 0px;
+      }
+
+      .fa-music {
+        color: var(--light-red);
+      }
+
+      .fa-print {
+        color: var(--light-coral);
+      }
+
+      .fa-football {
+        color: rgb(78, 172, 10);
+      }
+      .fa-chess {
+        color: hsla(158, 31%, 44%, 1);
+      }
+      .fa-mask {
+        color: hsla(238, 43%, 18%, 1);
+      }
+
+      .fa-gamepad {
+        color: var(--light-red);
       }
     </style>
+
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="hobby-container">
       <h3 class="hobby-heading">Hobbies</h3>
       <ul class="hobby-list">
-        <li>Music</li>
-        <li>3D Printing <i class="fa-solid fa-print"></i></li>
-        <li>Soccer <i class="fa-solid fa-futbol"></i></li>
-        <li>Chess <i class="fa-solid fa-chess"></i></li>
-        <li>Sudoku <i class="fa-solid fa-puzzle-piece"></i></li>
-        <li>Cosplaying <i class="fa-solid fa-jedi"></i></li>
+        <li><i class="fa-solid fa-music"></i> Music</li>
+        <li><i class="fa-solid fa-print"></i> 3D Printing</li>
+        <li><i class="fa-solid fa-football"></i> Soccer</li>
+        <li><i class="fa-solid fa-chess"></i> Chess</li>
+        <li><i class="fa-solid fa-gamepad"></i> Sudoku</li>
+        <li><i class="fa-solid fa-mask"></i> Cosplaying</li>
       </ul>
     </div>
   </body>
