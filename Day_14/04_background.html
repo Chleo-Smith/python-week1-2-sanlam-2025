@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .banner {
+        height: 600px;
+        background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlfGVufDB8fDB8fHww"),
+          linear-gradient(
+            to right top,
+            #004bd6,
+            #6f74e1,
+            #a5a0ec,
+            #d3cef6,
+            #ffffff
+          );
+        /*zoom in*/
+        background-size: cover;
+        /*remove rep of bg*/
+        background-repeat: no-repeat;
+        /*focus on bottom*/
+        background-position: bottom;
+
+        /*blend image and colour specified in bg*/
+        background-blend-mode: luminosity;
+        display: grid;
+        place-content: center;
+      }
+
+      body {
+        margin: 0px;
+      }
+
+      .banner-title {
+        color: white;
+        margin: 0px;
+        font-size: 64px;
+        font-family: "Pacifico", sans-serif;
+
+        background: rgba(128, 128, 128, 0.253);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h1 class="banner-title">welcome to your dreamland</h1>
+    </div>
+  </body>
+</html>
