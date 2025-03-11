@@ -1,0 +1,26 @@
+p {
+  color: rgba(104, 241, 104, 0.87);
+  font-family: "consolas", sans-serif;
+  text-decoration: red wavy underline;
+
+  font-style: italic;
+  font-size: large;
+}
+body {
+  background-color: black;
+}
+h1 {
+  color: white;
+  font-family: "press start 2P";
+  font-weight: bold;
+}
+
+.p1 {
+}
+
+.p2 {
+}
+
+.p3 {
+  color: ;
+}
