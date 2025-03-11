@@ -1,0 +1,26 @@
+body {
+  min-height: 800px;
+  border: 5px solid black;
+  display: flex;
+  /*main axis and cross access determine placement of layout
+  to poistion elements on main-axis you need jusity-content property
+  align-items move along cross access
+  start default
+
+  align content control alignent of everything
+  align content only alignment of particular one
+
+  */
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  font-size: 40pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
