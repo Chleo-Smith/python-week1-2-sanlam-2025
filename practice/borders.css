@@ -1,0 +1,17 @@
+p {
+  border-style: solid;
+  border-width: 5px;
+  border-color: gold;
+
+  /*higher number smoother rounding*/
+  border-radius: 10px;
+  padding: 5px;
+}
+
+h1 {
+  border-bottom-style: dotted;
+  border-top-style: dotted;
+  border-left-style: solid;
+  border-left-color: grey;
+  border-left-width: 8px;
+}
