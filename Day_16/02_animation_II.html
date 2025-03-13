@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        /* Centering */
+        display: grid;
+        place-content: center;
+        /* 1vh -> 1% of screen height */
+        min-height: 100vh;
+        margin: 0px;
+      }
+
+      .box {
+        height: 350px;
+        width: 350px;
+        background: crimson;
+        /* Animation */
+        /* timing function ease-in-out */
+        transition: 1s all ease-in-out;
+        transition: 1s all cubic-bezier(0.55, 0.21, 0.84, 1.73);
+      }
+
+      .box:hover {
+        background: skyblue;
+        transform: scale(1.1) translateY(-40px) translateX(40px);
+        cursor: pointer;
+      }
+
+      .box:active {
+        background: teal;
+        transform: scale(0.9);
+      }
+
+      /* .box:hover {
+        background: skyblue;
+        transform: scale(1.5) rotate(360deg);
+        border-radius: 50%;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+
+<!-- Pseudo class
+Fake class that CSS attaches to the element when the User interacts
+
+:fake-class
+Targets Mouseover
+:hover
+
+Targets Click
+:active
+
+-->
