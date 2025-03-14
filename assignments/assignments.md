@@ -395,8 +395,40 @@ Create a `WizardDuel` class where wizards can cast spells at each other until on
 ```python
 # Setup Code
 class WizardDuel:
-    # Your implementation here
-    pass
+    def __init__(self, wizard_1, wizard_2, health_1, health_2):
+        self.wizard_1 = wizard_1
+        self.wizard_2 = wizard_2
+        self.health_1 = health_1
+        self.health_2 = health_2
+
+    def cast_spell(self, name, attack):
+        if (name != self.wizard_1 and name != self.wizard_2):
+            print(f"Invalid Wizard Name: {name}")
+        elif (name == self.wizard_1):
+            self.health_2 = self.health_2 - attack
+        else:
+            self.health_1 = self.health_1 - attack
+
+    def get_winner(self):
+        if (self.health_1 == self.health_2):
+            print(
+                f"After a duel between {self.wizard_1} and {self.wizard_2}, They both have {self.health_1} health points left. Tie!"
+            )
+        elif (self.health_1 > self.health_2):
+            print(
+                f"After a duel between {self.wizard_1} and {self.wizard_2}, {self.wizard_1} wins with {self.health_1 - self.health_2} health points left."
+            )
+        else:
+            print(
+                f"After a duel between {self.wizard_1} and {self.wizard_2}, {self.wizard_2} wins with {self.health_2 - self.health_1} health points left."
+            )
+
+
+
+duel = WizardDuel("Harry", "Draco", 50, 40)
+duel.cast_spell("Harry", 10)
+duel.cast_spell("Draco", 5)
+winner = duel.get_winner()
 
 # Example usage:
 # duel = WizardDuel("Harry", "Draco", 50, 40)
