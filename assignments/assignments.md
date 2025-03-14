@@ -637,7 +637,10 @@ wizard = {"name": "Albus Dumbledore", "title": "Headmaster", "house": "Gryffindo
 
 # Your solution here:
 # profile = ...
+def profile(wizard):
+    return f"{wizard['name']}, the {wizard['title']} of {wizard['house']}"
 
+print(profile(wizard))
 # Expected Output
 # print(profile)
 ```
