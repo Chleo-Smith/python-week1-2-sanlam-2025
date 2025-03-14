@@ -550,16 +550,22 @@ Implement a class hierarchy for magical creatures where each subclass overrides 
 ```python
 # Setup Code
 class MagicalCreature:
-    # Your implementation here
-    pass
+    def __init__(self, name):
+        self.name = name
+    def sound(self):
+        print(f"bark")
+
 
 class Dragon(MagicalCreature):
-    # Your implementation here
-    pass
+    def sound(self):
+        print(f"Roar")
+
+
 
 class Unicorn(MagicalCreature):
-    # Your implementation here
-    pass
+    def sound(self):
+        print(f"Neigh")
+
 
 # Example usage:
 # dragon = Dragon("Norwegian Ridgeback")
