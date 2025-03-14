@@ -30,6 +30,22 @@ students = [
 
 # Your solution here:
 # sorted_students = ...
+students = [
+    {"name": "Alice", "grade": 88},
+    {"name": "Bob", "grade": 75},
+    {"name": "Charlie", "grade": 93}
+]
+
+def sort_and_rank(students):
+    sorted_students =  sorted(students, key=lambda x:x["grade"], reverse=True)
+
+    for i, student in enumerate(sorted_students):
+        student["rank"] = i + 1
+
+    return sorted_students
+
+sorted_students = list(sort_and_rank(students))
+print(sorted_students)
 
 # Expected Output
 # print(sorted_students)
