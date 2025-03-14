@@ -783,7 +783,9 @@ tasks = [
 
 # Your solution here:
 # sorted_tasks = ...
-
+def sorted_tasks(tasks):
+    return sorted(tasks, key = lambda task : (task["completed"], task["priority"]))
+print(sorted_tasks(tasks))
 # Expected Output
 # print(sorted_tasks)
 ```
