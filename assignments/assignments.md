@@ -258,6 +258,19 @@ sales = [
 
 # Your solution here:
 # sales_by_person = ...
+def sales_by_person(sales):
+    sales_filtered = {}
+    for person in sales:
+        name = person["salesperson"]
+        amount = person["amount"]
+
+        if(name in sales_filtered):
+            sales_filtered[name] += amount
+        else:
+            sales_filtered[name] = amount
+    return sales_filtered
+
+print(sales_by_person(sales))
 
 # Expected Output
 # print(sales_by_person)
