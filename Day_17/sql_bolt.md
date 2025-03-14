@@ -144,17 +144,70 @@ SELECT * FROM north_american_cities where country like "united states" order by 
 List all the cities west of Chicago, ordered from west to east
 
 ```sql
+SELECT * FROM north_american_cities
+order by longitude asc
+limit 6;
+
+
+SELECT *
+FROM north_american_cities
+WHERE longitude < (SELECT longitude FROM nort_american_cities WHERE city = "Chicago")
+Order by longitude
 
 ```
 
 List the two largest cities in Mexico (by population)
 
 ```sql
+SELECT * FROM north_american_cities
+where country = "Mexico"
+order by population desc
+limit 2;
 
 ```
 
 List the third and fourth largest cities (by population) in the United States and their population
 
 ```sql
-
+SELECT * FROM north_american_cities
+where country = "United States"
+order by population desc
+limit 2 offset 2;
 ```
+
+# On joining
+
+![alt text](image-11.png)
+
+![alt text](image-12.png)
+
+## 1. both data visible:
+
+![alt text](image-13.png)
+
+## 2. mixing data types not allowed
+
+## 3. having table without primary key not permitted
+
+- unique
+- not null
+- only one in a table
+
+## 4. repeating group not permitted
+
+## second normal from
+
+![alt text](image-14.png)
+
+## third normal from
+
+![alt text](image-15.png)
+
+# Exercise 6 — Tasks
+
+![alt text](image-9.png)
+![alt text](image-10.png)
+
+Find the domestic and international sales for each movie
+Show the sales numbers for each movie that did better internationally rather than domestically
+List all the movies by their ratings in descending order
