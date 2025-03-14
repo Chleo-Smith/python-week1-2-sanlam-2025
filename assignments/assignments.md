@@ -30,13 +30,8 @@ students = [
 
 # Your solution here:
 # sorted_students = ...
-students = [
-    {"name": "Alice", "grade": 88},
-    {"name": "Bob", "grade": 75},
-    {"name": "Charlie", "grade": 93}
-]
 
-def sort_and_rank(students):
+def sorted_students(students):
     sorted_students =  sorted(students, key=lambda x:x["grade"], reverse=True)
 
     for i, student in enumerate(sorted_students):
@@ -44,8 +39,7 @@ def sort_and_rank(students):
 
     return sorted_students
 
-sorted_students = list(sort_and_rank(students))
-print(sorted_students)
+print(sorted_students(students))
 
 # Expected Output
 # print(sorted_students)
@@ -78,10 +72,8 @@ salaries = [{"id": 1, "salary": 50000}, {"id": 2, "salary": 60000}]
 
 # Your solution here:
 # merged_data = ...
-employees = [{"id": 1, "name": "Alice"}, {"id": 2, "name": "Bob"}]
-salaries = [{"id": 1, "salary": 50000}, {"id": 2, "salary": 60000}]
 
-def merge(employees, salaries):
+def merge_data(employees, salaries):
     merge = []
     for employee in employees:
         employee_id = employee["id"]
@@ -92,8 +84,8 @@ def merge(employees, salaries):
                 merge.append(merge_entry)
                 break
     return merge
-merged_data = merge(employees, salaries)
-print(merged_data)
+
+print(merged_data(employees, salaries))
 
 # Expected Output
 # print(merged_data)
@@ -128,21 +120,15 @@ products = [
 
 # Your solution here:
 # filtered_products = ...
-products = [
-    {"id": 1, "category": "Electronics", "price": 850},
-    {"id": 2, "category": "Furniture", "price": 1200},
-    {"id": 3, "category": "Electronics", "price": 400},
-]
 
-
-def filtered(products):
+def filtered_products(products):
     filtered_list = []
     for item in products:
         if (item["category"] == "Electronics" and item["price"] < 500):
             filtered_list.append(item)
     return filtered_list
 
-print(filtered(products))
+print(filtered_products(products))
 
 # Expected Output
 # print(filtered_products)
@@ -175,16 +161,6 @@ orders = [
 
 # Your solution here:
 # product_quantities = ...
-orders = [
-    {
-        "order_id": 1,
-        "items": [{"product": "A", "quantity": 2}, {"product": "B", "quantity": 3}],
-    },
-    {
-        "order_id": 2,
-        "items": [{"product": "A", "quantity": 1}, {"product": "C", "quantity": 1}],
-    },
-]
 
 def product_quantities(orders):
     product_quantities = {}
