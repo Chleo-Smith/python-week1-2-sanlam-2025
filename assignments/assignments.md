@@ -668,6 +668,14 @@ creatures = [("Fawkes", "Phoenix"), ("Dobby", "House Elf"), ("Buckbeak", "Hippog
 
 # Your solution here:
 # matches = ...
+def matches(adopters, creatures):
+    def get_matches(adopter):
+        matching_creatures = list(filter(lambda creature: creature[1] == adopter[1], creatures))
+        return [(adopter[0], creature[0]) for creature in matching_creatures]
+
+    matches = [match for sublist in map(get_matches, adopters) for match in sublist]
+    return matches
+print(matches(adopters, creatures))
 
 # Expected Output
 # print(matches)
