@@ -210,6 +210,20 @@ transactions = [
 
 # Your solution here:
 # category_totals = ...
+def category_totals(transactions):
+    totals = {}
+
+    for item in transactions:
+        category = item["category"]
+        amount = item["amount"]
+
+        if(category in totals):
+            totals[category] += amount
+        else:
+            totals[category] = amount
+    return totals
+
+print(category_totals(transactions))
 
 # Expected Output
 # print(category_totals)
