@@ -78,6 +78,22 @@ salaries = [{"id": 1, "salary": 50000}, {"id": 2, "salary": 60000}]
 
 # Your solution here:
 # merged_data = ...
+employees = [{"id": 1, "name": "Alice"}, {"id": 2, "name": "Bob"}]
+salaries = [{"id": 1, "salary": 50000}, {"id": 2, "salary": 60000}]
+
+def merge(employees, salaries):
+    merge = []
+    for employee in employees:
+        employee_id = employee["id"]
+        for salary in salaries:
+            if salary["id"] == employee_id:
+                merge_entry = employee.copy()
+                merge_entry.update(salary)
+                merge.append(merge_entry)
+                break
+    return merge
+merged_data = merge(employees, salaries)
+print(merged_data)
 
 # Expected Output
 # print(merged_data)
