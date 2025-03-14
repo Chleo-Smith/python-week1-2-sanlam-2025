@@ -128,6 +128,21 @@ products = [
 
 # Your solution here:
 # filtered_products = ...
+products = [
+    {"id": 1, "category": "Electronics", "price": 850},
+    {"id": 2, "category": "Furniture", "price": 1200},
+    {"id": 3, "category": "Electronics", "price": 400},
+]
+
+
+def filtered(products):
+    filtered_list = []
+    for item in products:
+        if (item["category"] == "Electronics" and item["price"] < 500):
+            filtered_list.append(item)
+    return filtered_list
+
+print(filtered(products))
 
 # Expected Output
 # print(filtered_products)
