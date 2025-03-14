@@ -511,7 +511,20 @@ house_points = [
 
 # Your solution here:
 # house_totals = ...
+def house_totals(house_points):
+    aggregate_points = {}
+    for points in house_points:
+        name = points["house"]
+        amount = points["points"]
 
+        if name in aggregate_points:
+            aggregate_points[name] += amount
+        else:
+            aggregate_points[name] = amount
+    return aggregate_points
+
+
+print(house_totals(house_points))
 # Expected Output
 # print(house_totals)
 ```
