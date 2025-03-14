@@ -209,5 +209,11 @@ limit 2 offset 2;
 ![alt text](image-10.png)
 
 Find the domestic and international sales for each movie
-Show the sales numbers for each movie that did better internationally rather than domestically
+
+```sql
+
+```
+
+Show the sales numbers for each movie that did better internationally
+rather than domestically
 List all the movies by their ratings in descending order
