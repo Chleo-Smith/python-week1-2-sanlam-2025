@@ -364,7 +364,13 @@ books = [{"title": "A History of Magic", "pages": 100}, {"title": "Magical Draft
 
 # Your solution here:
 # formatted_titles = ...
+def formatted_titles(books):
 
+    filtered_books = filter(lambda book: book["pages"] > 120, books)
+    uppercase_books = map(lambda book: book["title"].upper(), filtered_books)
+    return list(uppercase_books)
+
+print(formatted_titles(books))
 # Expected Output
 # print(formatted_titles)
 ```
