@@ -175,6 +175,30 @@ orders = [
 
 # Your solution here:
 # product_quantities = ...
+orders = [
+    {
+        "order_id": 1,
+        "items": [{"product": "A", "quantity": 2}, {"product": "B", "quantity": 3}],
+    },
+    {
+        "order_id": 2,
+        "items": [{"product": "A", "quantity": 1}, {"product": "C", "quantity": 1}],
+    },
+]
+
+def product_quantities(orders):
+    product_quantities = {}
+    for order in orders:
+        for item in order["items"]:
+            #if order in list update
+
+            if(item["product"] in product_quantities):
+                product_quantities[item["product"]] += item["quantity"]
+            else:
+                product_quantities[item["product"]] = item["quantity"]
+    return product_quantities
+
+print(product_quantities(orders))
 
 # Expected Output
 # print(product_quantities)
