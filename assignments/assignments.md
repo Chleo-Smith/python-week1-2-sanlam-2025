@@ -603,7 +603,10 @@ artifacts = [
 
 # Your solution here:
 # sorted_artifacts = ...
+def sorted_artifacts(artifacts):
+    return sorted(artifacts, key = lambda artifact : (artifact["age"], artifact["power"]))
 
+print(sorted_artifacts(artifacts))
 # Expected Output
 # print(sorted_artifacts)
 ```
