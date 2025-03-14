@@ -335,7 +335,9 @@ ingredients = ["Wolfsbane", "Eye of Newt", "Dragon Scale"]
 
 # Your solution here:
 # formatted_ingredients = ...
-
+def formatted_ingredients(ingredients):
+    return list(map(lambda ingredient: ingredient + ": 3 grams", ingredients))
+print(formatted_ingredients(ingredients))
 # Expected Output
 # print(formatted_ingredients)
 ```
