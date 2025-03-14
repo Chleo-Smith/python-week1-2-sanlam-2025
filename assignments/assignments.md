@@ -477,7 +477,9 @@ library = [
 
 # Your solution here:
 # bagshot_books = ...
-
+def bagshot_books(library):
+    return [book for book in library if book["author"] == "Bathilda Bagshot"]
+print(bagshot_books(library))
 # Expected Output
 # print(bagshot_books)
 ```
