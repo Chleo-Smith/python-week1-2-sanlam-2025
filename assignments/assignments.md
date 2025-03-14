@@ -303,6 +303,11 @@ spells = [("Lumos", 5), ("Obliviate", 10), ("Expelliarmus", 7)]
 
 # Your solution here:
 # sorted_spells = ...
+def sorted_spells(spells):
+
+    return sorted(spells, key = lambda x: x[1], reverse=True)
+
+print(sorted_spells(spells))
 
 # Expected Output
 # print(sorted_spells)
