@@ -742,7 +742,13 @@ data = [
 
 # Your solution here:
 # modified_data = ...
+def modified_data(data):
+    for entry in data:
+        if "tag1" in entry["tags"]:
+            entry["tags"].append("tag4")
+    return data
 
+print(modified_data(data))
 # Expected Output
 # print(modified_data)
 ```
