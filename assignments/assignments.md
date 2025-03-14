@@ -423,11 +423,25 @@ Create a custom exception to handle errors in potion making, such as using the w
 ```python
 # Setup Code
 class PotionError(Exception):
-    pass
+    def __init__(self, msg):
+        self.msg = msg
+
+    def __str__(self):
+        return f'{self.msg}'
 
 def brew_potion(potion_name, ingredients):
-    # Your implementation here
-    pass
+    valid_ingredients = {
+        "Love Potion": ["Rose Petal", "Unicorn Hair"]
+    }
+
+    if potion_name not in valid_ingredients:
+        raise PotionError(
+            f"'{potion_name}' is not a valid potion."
+        )
+
+    for ingredient in ingredients:
+        if ingredient not in valid_ingredients[potion_name]:
+            raise PotionError(f"'{ingredient}' is not a valid ingredient for the {potion_name}.")
 
 # Example usage:
 # try:
