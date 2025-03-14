@@ -703,7 +703,12 @@ ingredients = ["Moonstone", "Silver Dust", "Dragon Blood"]
 
 # Your solution here:
 # potential_potions = ...
+def potential_potions(ingredients):
+    for i in range(len(ingredients)):
+        for j in range(i):
+            print(f"Combining {ingredients[j]} and {ingredients[i]} produces a unique potion")
 
+potential_potions(ingredients)
 # Expected Output
 ```
 
