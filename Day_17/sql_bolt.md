@@ -413,3 +413,57 @@ group by director;
 ```
 
 ![alt text](image-34.png)
+
+# Exercise 13 — Tasks
+
+Add the studio's new production, Toy Story 4 to the list of movies (you can use any director)
+
+```sql
+INSERT INTO movies
+VALUES (4, "Toy Story 4", "Inganathi Jacobs", 2025, 120)
+```
+
+Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.
+
+```sql
+INSERT INTO boxoffice
+VALUES (4, "8.7", 340000000,270000000)
+```
+
+![alt text](image-35.png)
+
+# Exercise 14 — Tasks
+
+![alt text](image-36.png)
+
+The director for A Bug's Life is incorrect, it was actually directed by John Lasseter
+
+```sql
+Update movies
+set director = "John Lasseter"
+where title = "A Bug's Life"
+```
+
+The year that Toy Story 2 was released is incorrect, it was actually released in 1999
+
+```sql
+select * from movies
+where title = "Toy Story 2";
+
+Update movies
+set year = 1999
+where title = "Toy Story 2";
+```
+
+Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
+
+```sql
+select * from movies
+where title = "Toy Story 8";
+
+Update movies
+set title = "Toy Story 3", director = "Lee Unkrich"
+where title = "Toy Story 8";
+```
+
+![alt text](image-37.png)
