@@ -467,3 +467,46 @@ where title = "Toy Story 8";
 ```
 
 ![alt text](image-37.png)
+
+# Exercise 15 — Tasks
+
+![alt text](image-38.png)
+
+This database is getting too big, lets remove all movies that were released before 2005.
+
+```sql
+SELECT * FROM movies
+where year < 2005;
+
+DELETE FROM movies
+where year < 2005;
+```
+
+Andrew Stanton has also left the studio, so please remove all movies directed by him.
+
+```sql
+SELECT * FROM movies
+where director = "Andrew Stanton";
+
+DELETE FROM movies
+where director = "Andrew Stanton";
+```
+
+![alt text](image-39.png)
+
+# Exercise 16 — Tasks
+
+![alt text](image-40.png)
+![alt text](image-41.png)
+![alt text](image-42.png)
+
+Create a new table named Database with the following columns:
+– Name A string (text) describing the name of the database
+– Version A number (floating point) of the latest version of this database
+– Download_count An integer count of the number of times this database was downloaded
+
+This table has no constraints.
+
+```sql
+
+```
