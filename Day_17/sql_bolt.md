@@ -508,5 +508,51 @@ Create a new table named Database with the following columns:
 This table has no constraints.
 
 ```sql
-
+CREATE TABLE Database (
+    name TEXT,
+    version FLOAT,
+    download_count INTEGER
+);
 ```
+
+![alt text](image-43.png)
+
+# Exercise 17 — Tasks
+
+![alt text](image-44.png)
+![alt text](image-45.png)
+
+Add a column named Aspect_ratio with a FLOAT data type to store the aspect-ratio each movie was released in.
+
+```sql
+ALTER TABLE movies
+ADD Aspect_ratio Float;
+```
+
+Add another column named Language with a TEXT data type to store the language that the movie was released in. Ensure that the default for this language is English
+
+```sql
+ALTER TABLE movies
+ADD Language TEXT
+default "English";
+```
+
+![alt text](image-46.png)
+
+# Exercise 18 — Tasks
+
+![alt text](image-47.png)
+
+We've sadly reached the end of our lessons, lets clean up by removing the Movies table
+
+```sql
+DROP TABLE IF EXISTS mytable;
+```
+
+And drop the BoxOffice table as well
+
+```sql
+DROP TABLE IF EXISTS mytable;
+```
+
+![alt text](image-48.png)
