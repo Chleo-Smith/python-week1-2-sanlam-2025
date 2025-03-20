@@ -22,6 +22,8 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      body {
+      }
       p {
         font-family: "Inter", sans-serif;
         color: #5d5f79;
@@ -34,7 +36,7 @@
 
       .news-title {
         font-family: "Inter", sans-serif;
-        font-weight: 800;
+        font-weight: 850;
       }
       .index {
         font-family: "Inter", sans-serif;
@@ -77,6 +79,26 @@
         display: flex;
         gap: 100px;
       }
+
+      .para-text {
+        display: flex;
+      }
+
+      .button {
+        background-color: #f15e50;
+        width: 120px;
+        height: 30px;
+      }
+      .read-more-button {
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-top: 5px;
+        font-size: small;
+        letter-spacing: 2px;
+      }
     </style>
   </head>
   <body>
@@ -93,15 +115,21 @@
       </div>
     </div>
 
-    <h1 class="news-title">The Bright Future of Web 3.0?</h1>
-
-    <p class="news-paragraph">
-      We dive into the next evolution of the web that claims to put the power of
-      the platforms back into the hands of the people. But is it really
-      fulfilling its promise?
-    </p>
-
-    <p class="read-more-button">Read more</p>
+    <div class="para-text">
+      <div class="title">
+        <h1 class="news-title">The Bright Future of Web 3.0?</h1>
+      </div>
+      <div class="paragraph">
+        <p class="news-paragraph">
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <div class="button">
+          <p class="read-more-button">Read more</p>
+        </div>
+      </div>
+    </div>
 
     <div class="list-container">
       <div class="list-box">
