@@ -19,8 +19,8 @@ The designs were created to the following widths:
 ### Neutral
 
 - Very dark blue (main BG): #0d192b
-- Very dark blue (card BG): hsl(216, 50%, 16%)
-- Very dark blue (line): hsl(215, 32%, 27%)
+- Very dark blue (card BG): #14253d
+- Very dark blue (line): #2f415b
 - White: hsl(0, 0%, 100%)
 
 ## Typography

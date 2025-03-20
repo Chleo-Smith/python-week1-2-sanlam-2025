@@ -17,7 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Frontend Mentor | NFT preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -33,10 +39,12 @@
         font-family: "Outfit", sans-serif;
 
         color: white;
+        font-weight: 600;
       }
       .equilibrium-description {
         font-family: "Outfit", sans-serif;
         color: #8bacda;
+        font-size: 19px;
       }
 
       .price {
@@ -89,7 +97,7 @@
         padding-top: 25px;
       }
       .box {
-        height: 580px;
+        height: 600px;
         width: 370px;
         background-color: #14253d;
         border-radius: 10px;
@@ -106,6 +114,12 @@
       .creator-text {
         padding-left: 16px;
       }
+      .fa-gem {
+        padding-right: 5px;
+      }
+      .fa-clock {
+        padding-right: 7px;
+      }
     </style>
   </head>
   <body>
@@ -120,8 +134,8 @@
         </p>
       </div>
       <div class="price-text">
-        <p class="price">0.041 ETH</p>
-        <p class="day-left">3 days left</p>
+        <p class="price"><i class="fa-regular fa-gem"></i>0.041 ETH</p>
+        <p class="day-left"><i class="fa-solid fa-clock"></i>3 days left</p>
       </div>
       <div class="creator-text">
         <div><img class="avatar-img" src="./images/image-avatar.png" /></div>
