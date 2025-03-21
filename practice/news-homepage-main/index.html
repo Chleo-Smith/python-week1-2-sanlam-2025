@@ -75,13 +75,14 @@
 
       .img {
         height: 100px;
+        background-size: cover;
       }
       .list-content {
         padding: 0px;
       }
       .list-container {
-        display: flex;
-        gap: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
       }
 
       .para-text {

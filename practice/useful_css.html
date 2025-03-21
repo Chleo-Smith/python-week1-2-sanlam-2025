@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: grid;
+      place-content: center;
+      min-height: 100vh;
+    }
+    .box {
+      background-color: orange;
+      max-width: 100px;
+    }
+    .container {
+      /*display grid*/
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+  </style>
+  <body>
+    <section class="container">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        voluptatem.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem.
+      </div>
+      <div class="box">
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptatibus, voluptatem.
+      </div>
+    </section>
+  </body>
+</html>
