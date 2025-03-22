@@ -17,6 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Frontend Mentor | Clipboard landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -54,11 +63,37 @@
         display: flex;
         gap: 20px;
       }
+
+      .bottom-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+      }
+      .fa-file-lines {
+        color: #9fabb2;
+        font-size: 30px;
+      }
+
+      .fa-font {
+        color: #9fabb2;
+        font-size: 25px;
+      }
+
+      .fa-italic {
+        color: #9fabb2;
+        font-size: 25px;
+      }
+
+      .fa-eye {
+        color: #9fabb2;
+        font-size: 30px;
+      }
     </style>
   </head>
   <body>
     <div class="list-item-container">
       <div class="list-item-box">
+        <i class="fa-regular fa-file-lines"></i>
         <h3 class="list-header">Create blacklists</h3>
         <p class="list-content">
           Ensure sensitive information never makes its way to your clipboard by
@@ -66,12 +101,15 @@
         </p>
       </div>
       <div class="list-item-box">
+        <i class="fa-solid fa-font"></i>
+        <i class="fa-solid fa-italic"></i>
         <h3 class="list-header">Plain text snippets</h3>
         <p class="list-content">
           Remove unwanted formatting from copied text for a consistent look.
         </p>
       </div>
       <div class="list-item-box">
+        <i class="fa-regular fa-eye"></i>
         <h3 class="list-header">Sneak preview</h3>
         <p class="list-content">
           Quick preview of all snippets on your Clipboard for easy access.
@@ -95,10 +133,27 @@
       </div>
     </div>
 
-    <p>FAQs</p>
-    <p>Contact Us</p>
-    <p>Privacy Policy</p>
-    <p>Press Kit</p>
-    <p>Install Guide</p>
+    <i class="logo" src="images/logo.svg"></i>
+    <div class="bottom-container">
+      <div class="bottom-item">
+        <p>FAQs</p>
+      </div>
+      <div class="bottom-item">
+        <p>Contact Us</p>
+      </div>
+      <div class="bottom-item">
+        <p>Privacy Policy</p>
+      </div>
+      <div class="bottom-item">
+        <p>Press Kit</p>
+      </div>
+      <div class="bottom-item">
+        <p>Install Guide</p>
+      </div>
+    </div>
+
+    <i class="fa-brands fa-square-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
   </body>
 </html>
