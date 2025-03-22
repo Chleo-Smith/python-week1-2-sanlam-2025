@@ -39,6 +39,7 @@
       }
 
       .list-item-container {
+        margin-top: 40px;
         display: flex;
         gap: 15px;
         justify-content: center;
@@ -73,28 +74,27 @@
       .bottom-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 0px;
       }
       .fa-file-lines {
         padding-left: 150px;
-        color: #4c545d;
+        color: #9fabb2;
         font-size: 30px;
       }
 
       .fa-font {
         padding-left: 100px;
-        color: #4c545d;
+        color: #9fabb2;
         font-size: 25px;
       }
 
       .fa-italic {
-        color: #4c545d;
+        color: #9fabb2;
         font-size: 25px;
       }
 
       .fa-eye {
         padding-left: 120px;
-        color: #4c545d;
+        color: #9fabb2;
         font-size: 30px;
       }
 
@@ -134,6 +134,19 @@
         font-size: larger;
         justify-content: flex-end;
         margin-left: 150px;
+      }
+
+      img {
+        display: flex;
+        align-self: center;
+        height: 40px;
+        width: 40px;
+        margin-right: 0px;
+      }
+
+      .bottom-item {
+        color: #4c545d;
+        margin-right: 50px;
       }
     </style>
   </head>
@@ -181,7 +194,7 @@
     </div>
 
     <div class="bottom">
-      <i class="logo" src="images/logo.svg"></i>
+      <img src="./images/logo.svg" />
       <div class="bottom-container">
         <div class="bottom-item">
           <p>FAQs</p>
