@@ -35,18 +35,21 @@
       }
 
       .list-item-box {
+        max-width: 350px;
       }
 
       .list-item-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
       }
       .list-header {
         text-align: center;
       }
 
       .center-content-container {
+        max-width: 600px;
+        padding-left: 600px;
       }
       .list-content {
         color: #9fabb2;
@@ -62,6 +65,7 @@
       .pill-container {
         display: flex;
         gap: 20px;
+        padding-left: 100px;
       }
 
       .bottom-container {
@@ -70,11 +74,13 @@
         gap: 0px;
       }
       .fa-file-lines {
+        padding-left: 150px;
         color: #9fabb2;
         font-size: 30px;
       }
 
       .fa-font {
+        padding-left: 100px;
         color: #9fabb2;
         font-size: 25px;
       }
@@ -85,8 +91,29 @@
       }
 
       .fa-eye {
+        padding-left: 120px;
         color: #9fabb2;
         font-size: 30px;
+      }
+
+      .ios-pill {
+        height: 30px;
+        width: 160px;
+        border-radius: 30px;
+        background-color: #26baa4;
+        color: white;
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+
+      .mac-pill {
+        height: 30px;
+        width: 150px;
+        border-radius: 30px;
+        background-color: #6173ff;
+        color: white;
+        padding-left: 20px;
+        padding-top: 10px;
       }
     </style>
   </head>
@@ -133,27 +160,28 @@
       </div>
     </div>
 
-    <i class="logo" src="images/logo.svg"></i>
-    <div class="bottom-container">
-      <div class="bottom-item">
-        <p>FAQs</p>
+    <div class="bottom">
+      <i class="logo" src="images/logo.svg"></i>
+      <div class="bottom-container">
+        <div class="bottom-item">
+          <p>FAQs</p>
+        </div>
+        <div class="bottom-item">
+          <p>Contact Us</p>
+        </div>
+        <div class="bottom-item">
+          <p>Privacy Policy</p>
+        </div>
+        <div class="bottom-item">
+          <p>Press Kit</p>
+        </div>
+        <div class="bottom-item">
+          <p>Install Guide</p>
+        </div>
       </div>
-      <div class="bottom-item">
-        <p>Contact Us</p>
-      </div>
-      <div class="bottom-item">
-        <p>Privacy Policy</p>
-      </div>
-      <div class="bottom-item">
-        <p>Press Kit</p>
-      </div>
-      <div class="bottom-item">
-        <p>Install Guide</p>
-      </div>
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
     </div>
-
-    <i class="fa-brands fa-square-facebook"></i>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-instagram"></i>
   </body>
 </html>
