@@ -36,9 +36,23 @@
       .list-header {
         text-align: center;
       }
+
+      .center-content-container {
+      }
       .list-content {
         color: #9fabb2;
         text-align: center;
+      }
+      .center-header {
+        text-align: center;
+      }
+      .center-content {
+        color: #9fabb2;
+        text-align: center;
+      }
+      .pill-container {
+        display: flex;
+        gap: 20px;
       }
     </style>
   </head>
@@ -65,15 +79,21 @@
       </div>
     </div>
 
-    <h2>Clipboard for iOS and Mac OS</h2>
-
-    <h2>
-      Available for free on the App Store. Download for Mac or iOS, sync with
-      iCloud and you’re ready to start adding to your clipboard.
-    </h2>
-
-    <p>Download for iOS</p>
-    <p>Download for Mac</p>
+    <div class="center-content-container">
+      <h2 class="center-header">Clipboard for iOS and Mac OS</h2>
+      <p class="center-content">
+        Available for free on the App Store. Download for Mac or iOS, sync with
+        iCloud and you’re ready to start adding to your clipboard.
+      </p>
+      <div class="pill-container">
+        <div>
+          <p class="ios-pill">Download for iOS</p>
+        </div>
+        <div>
+          <p class="mac-pill">Download for Mac</p>
+        </div>
+      </div>
+    </div>
 
     <p>FAQs</p>
     <p>Contact Us</p>
